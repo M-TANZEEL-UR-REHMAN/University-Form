@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <center>  <h1>University Admission Form</h1></center>
+    </header>
+    <form>
+        <fieldset>
+            <legend><h2>Personal Information</h2></legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="name">Father Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your father name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+           <br><br> <div class="form-row">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Program Details</h2></legend>
+            <label for="program">Program Applying For:
+            <select id="program" name="program">
+                <option value="computer-science">Computer Science</option>
+                <option value="business-management">Business Management</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts">Arts</option>
+            </select>
+            <br><br>
+
+            <label>Preferred Mode of Study:</label>
+            <input type="radio" id="online" name="mode" value="online" required>
+            <label for="online">Online</label>
+            <input type="radio" id="on-campus" name="mode" value="on-campus" required>
+            <label for="on-campus">On Campus</label>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Additional Information</h2></legend>
+            <label for="statement">Statement of Purpose:</label>
+            <textarea id="statement" name="statement" rows="4" placeholder="Describe why you want to join this program" required></textarea>
+
+            <br><br>
+
+            <label for="documents">Upload Documents:</label>
+            <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx">
+        </fieldset>
+
+       <br> <center><button type="submit">Submit Application</button></center>
+    </form>
+</body>
+</html>
